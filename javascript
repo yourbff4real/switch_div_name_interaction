@@ -4,17 +4,11 @@ function functionText(){
   var eleDiv1= document.getElementById("div1");
   var eleDiv2=document.getElementById("div2");
   
-  if (eleDiv1.innerHTML ="Hello"){
-    
-    eleDiv1.innerHTML="Ola"
-  }
+   
+  var textBuffer1 = eleDiv1.innerHTML;
+  var textBuffer2 = eleDiv2.innerHTML;
   
-  if(eleDiv2.innerHTML="Good bye"){
-    eleDiv2.innerHTML="Adios"
-  }
-  
-
-  
-  
+  eleDiv1.innerHTML=textBuffer2;
+  eleDiv2.innerHTML=textBuffer1;
   
 }
